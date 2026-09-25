@@ -13,19 +13,6 @@ public class Coin {
         pTails = p;
     }
 
-    public void flip() {
-        if (Math.random() < pTails) {
-            state = "tails";
-            tails++;
-        } 
-        else {
-            state = "heads";
-            heads++;
-        }
-    }
-    
-
-
     public String getState() {
         return state;
     }
@@ -36,7 +23,7 @@ public class Coin {
         return tails;
     }
     public void flip() {
-        if (Math.random() < 0.5) {
+        if (Math.random() < pTails) {
             state = "tails";
             tails++;
         } else {

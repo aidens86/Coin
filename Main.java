@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
+        Game g = new Game();
+        g.play();
 
         Coin penny = new Coin();
         System.out.println(penny);
@@ -19,11 +21,12 @@ public class Main {
         nickel.flip(1000);
         System.out.println(nickel.getHeads());
         System.out.println(nickel.getTails());
-        
-        Player sanders = new Player(100);
+    
+Player sanders = new Player(100);
         sanders.flip(penny, "heads", 25);
         System.out.println(sanders.getBalance());
-    }
-
+    
+   
+}
 
 }
