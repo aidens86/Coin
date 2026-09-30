@@ -1,3 +1,19 @@
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+File file = new File("flips.txt");
+Scanner s = new Scanner(file);
+
+int heads = 0;
+int tails = 0;
+
+while (s.hasNext()) {
+if (s.next().equals("heads")) {
+    heads++;
+} else {
+    tails++;
+}
+
 public class Main {
     public static void main(String[] args) {
         Game g = new Game();
